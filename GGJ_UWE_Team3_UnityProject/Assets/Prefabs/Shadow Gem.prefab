@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8720193977504698766}
   - component: {fileID: 8720193977504698760}
   - component: {fileID: 8720193977504698767}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4842,7 +4842,7 @@ GameObject:
   - component: {fileID: 8720193977651307109}
   - component: {fileID: 8720193977651307111}
   - component: {fileID: 8720193977651307108}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Shadow Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4905,7 +4905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8720193978615724358}
   - component: {fileID: 8720193978615724359}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

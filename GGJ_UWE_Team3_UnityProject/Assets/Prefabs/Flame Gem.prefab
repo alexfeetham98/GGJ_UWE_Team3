@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8145447082917723845}
   - component: {fileID: 8145447082917723844}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8145447083631710739}
   - component: {fileID: 8145447083631710741}
   - component: {fileID: 8145447083631710738}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 8145447084232175017}
   - component: {fileID: 8145447084232175019}
   - component: {fileID: 8145447084232175062}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Flame Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}

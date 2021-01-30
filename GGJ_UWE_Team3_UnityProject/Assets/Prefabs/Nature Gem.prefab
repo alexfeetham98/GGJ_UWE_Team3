@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2237519432410697990}
   - component: {fileID: 2237519432410697988}
   - component: {fileID: 2237519432410697989}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4814,7 +4814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2237519433709551536}
   - component: {fileID: 2237519433709551535}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4898,7 +4898,7 @@ GameObject:
   - component: {fileID: 2237519433728856847}
   - component: {fileID: 2237519433728856845}
   - component: {fileID: 2237519433728856846}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Nature Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}

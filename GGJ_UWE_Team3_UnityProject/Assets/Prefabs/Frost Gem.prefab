@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8658711166096586746}
   - component: {fileID: 8658711166096586740}
   - component: {fileID: 8658711166096586745}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Frost Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 8658711166590443173}
   - component: {fileID: 8658711166590443175}
   - component: {fileID: 8658711166590443174}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4878,7 +4878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8658711167013325936}
   - component: {fileID: 8658711167013325937}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
