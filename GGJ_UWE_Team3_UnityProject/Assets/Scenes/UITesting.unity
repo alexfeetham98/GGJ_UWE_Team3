@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 468612288}
   - component: {fileID: 468612287}
+  - component: {fileID: 468612290}
+  - component: {fileID: 468612289}
   m_Layer: 0
   m_Name: Flame Gem
   m_TagString: Untagged
@@ -206,6 +208,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468612289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468612286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3db13d941725db41aa07aa19faf0a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 3
+--- !u!58 &468612290
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468612286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.185
 --- !u!1 &558558798
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +247,8 @@ GameObject:
   m_Component:
   - component: {fileID: 558558800}
   - component: {fileID: 558558799}
+  - component: {fileID: 558558802}
+  - component: {fileID: 558558801}
   m_Layer: 0
   m_Name: Nature Gem
   m_TagString: Untagged
@@ -289,6 +322,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &558558801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558558798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3db13d941725db41aa07aa19faf0a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 1
+--- !u!58 &558558802
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558558798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.185
 --- !u!1 &924060537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5186,6 +5248,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1439638473}
   - component: {fileID: 1439638472}
+  - component: {fileID: 1439638475}
+  - component: {fileID: 1439638474}
   m_Layer: 0
   m_Name: Shadow Gem
   m_TagString: Untagged
@@ -5259,6 +5323,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439638474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439638471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3db13d941725db41aa07aa19faf0a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 4
+--- !u!58 &1439638475
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439638471}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.185
 --- !u!1 &1476089832
 GameObject:
   m_ObjectHideFlags: 0
@@ -19681,6 +19774,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1967832758}
   - component: {fileID: 1967832757}
+  - component: {fileID: 1967832760}
+  - component: {fileID: 1967832759}
   m_Layer: 0
   m_Name: Frost Gem
   m_TagString: Untagged
@@ -19754,6 +19849,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1967832759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967832756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3db13d941725db41aa07aa19faf0a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemType: 2
+--- !u!58 &1967832760
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967832756}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.185
 --- !u!1001 &684503669303727366
 PrefabInstance:
   m_ObjectHideFlags: 0
