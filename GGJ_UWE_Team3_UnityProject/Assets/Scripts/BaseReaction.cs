@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseInteraction : MonoBehaviour
+public class BaseReaction : MonoBehaviour
 {
     private GemStateListener listener;
 

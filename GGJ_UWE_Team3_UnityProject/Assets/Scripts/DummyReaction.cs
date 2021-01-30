@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DummyInteraction : MonoBehaviour
+public class DummyReaction : MonoBehaviour
 {
     [SerializeField] private Material activatedMat;
     [SerializeField] private Material defaultMat;
