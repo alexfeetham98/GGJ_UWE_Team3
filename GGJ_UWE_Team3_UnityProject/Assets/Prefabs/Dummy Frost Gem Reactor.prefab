@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9000546000959268807}
   - component: {fileID: 9000546000959268800}
   m_Layer: 0
-  m_Name: Dummy Frost Gem Interaction
+  m_Name: Dummy Frost Gem Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

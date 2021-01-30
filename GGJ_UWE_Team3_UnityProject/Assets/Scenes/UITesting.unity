@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166767183926856993, guid: 827e118f238308245a9b78142b8b031b, type: 3}
       propertyPath: m_Name
-      value: Dummy Nature Gem Interaction
+      value: Dummy Nature Gem Reactor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827e118f238308245a9b78142b8b031b, type: 3}
@@ -373,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310392528977003029, guid: 04ac198482fa4c743965ec70022819a9, type: 3}
       propertyPath: m_Name
-      value: Dummy Shadow Gem Interaction
+      value: Dummy Shadow Gem Reactor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ac198482fa4c743965ec70022819a9, type: 3}
@@ -386,7 +386,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7779756905597443543, guid: 06a057c979775df44b2e09a030a687c4, type: 3}
       propertyPath: m_Name
-      value: Dummy Flame Gem Interaction
+      value: Dummy Flame Gem Reactor
       objectReference: {fileID: 0}
     - target: {fileID: 7779756905597443547, guid: 06a057c979775df44b2e09a030a687c4, type: 3}
       propertyPath: m_RootOrder
@@ -443,7 +443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9000546000959268801, guid: 03a59821333b1e44885c651e59236f33, type: 3}
       propertyPath: m_Name
-      value: Dummy Frost Gem Interaction
+      value: Dummy Frost Gem Reactor
       objectReference: {fileID: 0}
     - target: {fileID: 9000546000959268805, guid: 03a59821333b1e44885c651e59236f33, type: 3}
       propertyPath: m_RootOrder
