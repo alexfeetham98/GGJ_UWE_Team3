@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9000546000959268805}
   - component: {fileID: 9000546000959268806}
-  - component: {fileID: 9000546000959268807}
   - component: {fileID: 9000546000959268800}
   m_Layer: 0
   m_Name: Dummy Frost Gem Reactor
@@ -84,20 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9000546000959268807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9000546000959268801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f759ce969bf5a084a936b46e3a130e82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activatingGem: 2
-  isActive: 0
 --- !u!114 &9000546000959268800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +97,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activatedMat: {fileID: 2100000, guid: 58ccc9d2c8b9f524d85e18b5da93e9e1, type: 2}
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  activatingGem: 2

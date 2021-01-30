@@ -4,39 +4,49 @@ using UnityEngine;
 
 public class BaseReaction : MonoBehaviour
 {
-    private GemStateListener listener;
-
-    private bool hasReacted;
+    [SerializeField] private GEMS activatingGem;
+    [Header("Debug (see, but don't touch)")]
+    [SerializeField] private bool isActive;
+    [SerializeField] private bool hasReacted;
 
     void Start()
     {
-        listener = GetComponent<GemStateListener>();
+        isActive = false;
         hasReacted = false;
     }
     
     void Update()
     {
-        if (listener.isActive && !hasReacted)
+        if (GemStateController._i.gemState == activatingGem)
+        {
+            isActive = true;
+        }
+        else
+        {
+            isActive = false;
+        }
+
+        if (isActive && !hasReacted)
         {
             hasReacted = true;
             Reaction();
         }
-        else if (!listener.isActive)
+        else if (!isActive)
         {
             hasReacted = false;
-            Reset();
+            ResetReaction();
         }
     }
 
-    private void Reaction()
+    public virtual void Reaction()
     {
-        // Write your reaction code here
+        // Override to write your reaction code
         // Example, flame gem evaporating water
     }
 
-    private void Reset()
+    public virtual void ResetReaction()
     {
-        // Write your reset code here
+        // Override to write your reaction reset code here
         // Example, bringing the water back into existence
     }
 }
