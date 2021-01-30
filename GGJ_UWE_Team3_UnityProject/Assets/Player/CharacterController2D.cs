@@ -33,8 +33,6 @@ public class CharacterController2D : MonoBehaviour
         moveDir = value.Get<Vector2>().normalized;
     }
 
-
-
     void Update()
     {
         if (moveDir.x < 0)
