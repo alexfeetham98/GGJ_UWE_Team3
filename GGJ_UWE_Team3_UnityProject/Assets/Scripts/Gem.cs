@@ -34,7 +34,7 @@ public class Gem : MonoBehaviour
             new Vector3(spriteLocalPos.x, 0 + bob, spriteLocalPos.z);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check to add gem to player inventory
         if (collision.gameObject.tag == "Player")

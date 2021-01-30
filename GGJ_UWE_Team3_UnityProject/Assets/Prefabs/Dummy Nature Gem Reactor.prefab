@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2166767183926856991}
   - component: {fileID: 2166767183926856992}
-  - component: {fileID: 2166767183926856989}
   - component: {fileID: 2166767183926856990}
   m_Layer: 0
   m_Name: Dummy Nature Gem Reactor
@@ -84,20 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2166767183926856989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166767183926856993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f759ce969bf5a084a936b46e3a130e82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activatingGem: 1
-  isActive: 0
 --- !u!114 &2166767183926856990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,5 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bfa57b83057fc4abe3577b5b9f3e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activatingGem: 1
+  isActive: 0
   activatedMat: {fileID: 2100000, guid: 7db394e84dae7174fa8cfc30ebf66797, type: 2}
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
