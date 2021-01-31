@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3310392528977003024}
   - component: {fileID: 3310392528977003026}
   m_Layer: 0
-  m_Name: Dummy Shadow Gem Reactor
+  m_Name: Example  Shadow Gem Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,9 +69,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -59555333
+  m_SortingLayer: 4
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bfa57b83057fc4abe3577b5b9f3e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activatedMat: {fileID: 2100000, guid: 2757968d5dd2a8c449ec48f4fec9618c, type: 2}
-  defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   activatingGem: 4
   isActive: 0
   hasReacted: 0
+  activatedMat: {fileID: 2100000, guid: 2757968d5dd2a8c449ec48f4fec9618c, type: 2}
+  defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
