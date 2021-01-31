@@ -29,7 +29,7 @@ public class ColourCamController : MonoBehaviour
                 colourCam.cullingMask = LayerMask.GetMask("Shadow Realm", "All Realms");
                 break;
             case GEMS.NONE:
-                colourCam.cullingMask = LayerMask.GetMask("All Realms");
+                colourCam.cullingMask = LayerMask.GetMask("Common Realm", "All Realms");
                 break;
             default:
                 Debug.Log("Unkown Active Gem");

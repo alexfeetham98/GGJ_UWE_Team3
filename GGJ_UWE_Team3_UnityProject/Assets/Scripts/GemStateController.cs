@@ -13,6 +13,9 @@ public enum GEMS
 
 public class GemStateController : MonoBehaviour
 {
+    public GameObject blueWalls;
+    public GameObject greenWalls;
+
     public GEMS gemState;
 
     public static GemStateController _i { get; private set; }
@@ -28,12 +31,26 @@ public class GemStateController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         gemState = GEMS.NONE;
     }
     
     void Update()
     {
-        
+        if (gemState == GEMS.FROST)
+        {
+            blueWalls.SetActive(false);
+        }
+        else if (gemState != GEMS.FROST)
+        {
+            blueWalls.SetActive(true);
+        }
+        if (gemState == GEMS.NATURE)
+        {
+            greenWalls.SetActive(false);
+        }
+        else if (gemState != GEMS.NATURE)
+        {
+            greenWalls.SetActive(true);
+        }
     }
 }
