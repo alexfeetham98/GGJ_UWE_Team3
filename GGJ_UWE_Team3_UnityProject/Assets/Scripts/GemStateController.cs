@@ -38,40 +38,40 @@ public class GemStateController : MonoBehaviour
     
     void Update()
     {
-        if (gemState == GEMS.FROST)
-        {
-            blueWalls.SetActive(false);
-        }
-        else if (gemState != GEMS.FROST)
-        {
-            blueWalls.SetActive(true);
-        }
+        //if (gemState == GEMS.FROST)
+        //{
+        //    blueWalls.SetActive(false);
+        //}
+        //else if (gemState != GEMS.FROST)
+        //{
+        //    blueWalls.SetActive(true);
+        //}
 
-        if (gemState == GEMS.NATURE)
-        {
-            greenWalls.SetActive(false);
-        }
-        else if (gemState != GEMS.NATURE)
-        {
-            greenWalls.SetActive(true);
-        }
+        //if (gemState == GEMS.NATURE)
+        //{
+        //    greenWalls.SetActive(false);
+        //}
+        //else if (gemState != GEMS.NATURE)
+        //{
+        //    greenWalls.SetActive(true);
+        //}
 
-        if (gemState == GEMS.FLAME)
-        {
-            redWalls.SetActive(false);
-        }
-        else if (gemState != GEMS.FLAME)
-        {
-            redWalls.SetActive(true);
-        }
+        //if (gemState == GEMS.FLAME)
+        //{
+        //    redWalls.SetActive(false);
+        //}
+        //else if (gemState != GEMS.FLAME)
+        //{
+        //    redWalls.SetActive(true);
+        //}
 
-        if (gemState == GEMS.SHADOW)
-        {
-            purpleWalls.SetActive(false);
-        }
-        else if (gemState != GEMS.SHADOW)
-        {
-            purpleWalls.SetActive(true);
-        }
+        //if (gemState == GEMS.SHADOW)
+        //{
+        //    purpleWalls.SetActive(false);
+        //}
+        //else if (gemState != GEMS.SHADOW)
+        //{
+        //    purpleWalls.SetActive(true);
+        //}
     }
 }
