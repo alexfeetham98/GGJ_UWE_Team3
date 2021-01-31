@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{2d501163-b742-4351-beae-851b27949232}">
+		<property name="name">
+			<value>Lava 3D</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{db76b481-0bc7-46c8-96f2-b22f0009bcbc}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{38b9c735-a35d-47f8-a247-08323c923ddf}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d30c45f4-7798-44ef-a1d0-33a5bfcad981}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{db76b481-0bc7-46c8-96f2-b22f0009bcbc}">
+		<relationship name="effects">
+			<destination>{e19f87ce-ec5e-43c6-82b5-6388d09e083e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{38b9c735-a35d-47f8-a247-08323c923ddf}" />
+	<object class="MixerBusFader" id="{e19f87ce-ec5e-43c6-82b5-6388d09e083e}" />
+</objects>
