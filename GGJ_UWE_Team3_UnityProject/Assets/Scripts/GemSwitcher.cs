@@ -7,38 +7,34 @@ using UnityEngine.UI;
 public class GemSwitcher : MonoBehaviour
 {
     [SerializeField] private RectTransform gemWheel;
-    [SerializeField] private RectTransform slot1;
-    [SerializeField] private RectTransform slot2;
-    [SerializeField] private RectTransform slot3;
-    [SerializeField] private RectTransform slot4;
+    [SerializeField] private RectTransform[] slots;
 
     private Inventory inv;
     private bool canSwitch;
     [SerializeField] private int selectedGemIndex;
+    [SerializeField] private int currentUIGemIndex;
     private Vector3 selectedSlotScale;
     private Vector3 nonSelectedSlotScale;
-    private bool updatingLerpScaler;
     private float lerpScaler;
     [SerializeField] private float lerpScalerSpeed;
-    private bool needToLoadUIForSingle;
-    private bool hasLoadedUIForSingle;
+    private bool needToLoadUI;
+    private bool hasLoadedUI;
 
     private void Awake()
     {
         inv = GetComponent<Inventory>();
         canSwitch = false;
         selectedGemIndex = -1;
+        currentUIGemIndex = -1;
         selectedSlotScale = new Vector3(0.26f, 0.26f, 0.26f);
         nonSelectedSlotScale = new Vector3(0.21f, 0.21f, 0.21f);
-        updatingLerpScaler = false;
         lerpScaler = 0;
-        needToLoadUIForSingle = false;
-        hasLoadedUIForSingle = false;
+        needToLoadUI = false;
+        hasLoadedUI = false;
     }
 
     private void Update()
     {
-        UpdateLerpScaler();
         UpdateGemVisuals();
 
         CheckIfCanSwitch();
@@ -46,49 +42,55 @@ public class GemSwitcher : MonoBehaviour
 
     private void UpdateLerpScaler()
     {
-        if (updatingLerpScaler && lerpScaler < 1)
+        if (lerpScaler < 1)
         {
             lerpScaler += 1 * lerpScalerSpeed * Time.deltaTime;
         }
-        else if (lerpScaler >= 1)
+        if (lerpScaler >= 1)
         {
             lerpScaler = 1;
-            updatingLerpScaler = false;
         }
+    }
+
+    public void AddGemToUI()
+    {
+        selectedGemIndex = inv.gemInv.Count - 1;
+        GemStateController._i.gemState = inv.gemInv[inv.gemInv.Count - 1];
+        hasLoadedUI = false;
     }
 
     private void UpdateGemVisuals()
     {
-        if (inv.gemInv.Count == 0)
-        {
-            selectedGemIndex = -1;
+        //if (inv.gemInv.Count == 0)
+        //{
+        //    //selectedGemIndex = -1;
 
-            // Show empty UI wheel
-        }
-        else if (inv.gemInv.Count > 0)
-        {
-            // Populate wheel with collected gems
-        }
+        //    // Show empty UI wheel
+        //}
+        //else if (inv.gemInv.Count > 0)
+        //{
+        //    // Populate wheel with collected gems
+        //}
 
         // Updating selection based on gem count of 1
-        if (inv.gemInv.Count == 1 && !hasLoadedUIForSingle)
+        if (currentUIGemIndex != selectedGemIndex && !hasLoadedUI)
         {
-            updatingLerpScaler = true;
-            needToLoadUIForSingle = true;
-            selectedGemIndex = 0;
+            needToLoadUI = true;
+            UpdateLerpScaler();
 
-            if (needToLoadUIForSingle)
+            if (needToLoadUI)
             {
-                slot1.localScale = Vector3.Lerp(nonSelectedSlotScale, selectedSlotScale, lerpScaler);
-                //slot2.localScale = Vector3.Slerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
-                //slot3.localScale = Vector3.Lerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
-                //slot4.localScale = Vector3.Slerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
+                if (selectedGemIndex >= 0)
+                slots[selectedGemIndex].localScale = Vector3.Lerp(nonSelectedSlotScale, selectedSlotScale, lerpScaler);
+                if (currentUIGemIndex >= 0)
+                slots[currentUIGemIndex].localScale = Vector3.Lerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
             }
             if (lerpScaler == 1)
             {
-                needToLoadUIForSingle = false;
-                hasLoadedUIForSingle = true;
+                needToLoadUI = false;
+                hasLoadedUI = true;
                 lerpScaler = 0;
+                currentUIGemIndex = selectedGemIndex;
             }
         }
     }
@@ -119,7 +121,8 @@ public class GemSwitcher : MonoBehaviour
                 selectedGemIndex = 0;
             }
 
-            updatingLerpScaler = true;
+            // Update gemstate
+            GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
         }
         else if (value.Get<float>() < 0 && canSwitch)
         {
@@ -132,6 +135,9 @@ public class GemSwitcher : MonoBehaviour
             {
                 selectedGemIndex = inv.gemInv.Count - 1;
             }
+
+            // Update gemstate
+            GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
         }
     }
 

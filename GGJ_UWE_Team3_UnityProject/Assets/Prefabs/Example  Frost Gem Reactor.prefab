@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9000546000959268805}
   - component: {fileID: 9000546000959268806}
   - component: {fileID: 9000546000959268800}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Example  Frost Gem Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

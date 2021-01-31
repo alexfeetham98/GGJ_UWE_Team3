@@ -198,6 +198,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226105808}
   m_CullTransparentMesh: 1
+--- !u!20 &315521436 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7801505083679077733, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+  m_PrefabInstance: {fileID: 1718515064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &384424586
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +357,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446024612}
   m_CullTransparentMesh: 1
+--- !u!1 &538189270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538189271}
+  m_Layer: 5
+  m_Name: Gem Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &538189271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538189270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2016457362}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &978222636
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,11 +467,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978222636}
   m_CullTransparentMesh: 1
---- !u!20 &979642590 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7801505083960565720, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-  m_PrefabInstance: {fileID: 1718515064}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1718515064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -463,6 +498,26 @@ PrefabInstance:
       propertyPath: lerpScalerSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: slots.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: slots.Array.data[0]
+      value: 
+      objectReference: {fileID: 2016457362}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: slots.Array.data[1]
+      value: 
+      objectReference: {fileID: 226105809}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: slots.Array.data[2]
+      value: 
+      objectReference: {fileID: 978222637}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: slots.Array.data[3]
+      value: 
+      objectReference: {fileID: 446024613}
     - target: {fileID: 7288347924961006810, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -531,7 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810764904}
   - component: {fileID: 1810764903}
-  m_Layer: 15
+  m_Layer: 18
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +727,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 979642590}
+  m_Camera: {fileID: 315521436}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -731,7 +786,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
-  m_Children: []
+  m_Children:
+  - {fileID: 538189271}
   m_Father: {fileID: 384424587}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -964,6 +1020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dummy Nature Gem Reactor
       objectReference: {fileID: 0}
+    - target: {fileID: 2166767183926856993, guid: 827e118f238308245a9b78142b8b031b, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827e118f238308245a9b78142b8b031b, type: 3}
 --- !u!1001 &2237519433171729759
@@ -1078,6 +1138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dummy Shadow Gem Reactor
       objectReference: {fileID: 0}
+    - target: {fileID: 3310392528977003029, guid: 04ac198482fa4c743965ec70022819a9, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ac198482fa4c743965ec70022819a9, type: 3}
 --- !u!1001 &7779756905390006688
@@ -1090,6 +1154,10 @@ PrefabInstance:
     - target: {fileID: 7779756905597443543, guid: 06a057c979775df44b2e09a030a687c4, type: 3}
       propertyPath: m_Name
       value: Dummy Flame Gem Reactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779756905597443543, guid: 06a057c979775df44b2e09a030a687c4, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7779756905597443547, guid: 06a057c979775df44b2e09a030a687c4, type: 3}
       propertyPath: m_RootOrder
@@ -1150,11 +1218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8145447084232175017, guid: fb5e0ceba417a2a4895fb784902aa281, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.33
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 8145447084232175017, guid: fb5e0ceba417a2a4895fb784902aa281, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 8145447084232175017, guid: fb5e0ceba417a2a4895fb784902aa281, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1318,6 +1386,10 @@ PrefabInstance:
     - target: {fileID: 9000546000959268801, guid: 03a59821333b1e44885c651e59236f33, type: 3}
       propertyPath: m_Name
       value: Dummy Frost Gem Reactor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000546000959268801, guid: 03a59821333b1e44885c651e59236f33, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9000546000959268805, guid: 03a59821333b1e44885c651e59236f33, type: 3}
       propertyPath: m_RootOrder
