@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{36925d4c-4e37-43d6-9c4d-69b6eba2a273}">
+		<property name="assetPath">
+			<value>Rock Movement/Rock Reveal1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.9838125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cefba92b-3145-4fc6-bbb9-494169743225}</destination>
+		</relationship>
+	</object>
+</objects>

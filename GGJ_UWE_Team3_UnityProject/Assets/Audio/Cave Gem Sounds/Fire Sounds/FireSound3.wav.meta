@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 7c2b4f23d5713fd4a99f420dc61b7402
+=======
+guid: 1af4785c202eb1b4da74a7b029298d0e
+>>>>>>> audio-mike
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

@@ -44,6 +44,7 @@ public class Gem : MonoBehaviour
             inv.pickupGem(gemType);
 
             Destroy(gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Poof", GetComponent<Transform>().position);
         }
     }
 }

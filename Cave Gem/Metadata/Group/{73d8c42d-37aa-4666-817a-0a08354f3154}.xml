@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{73d8c42d-37aa-4666-817a-0a08354f3154}">
+		<property name="name">
+			<value>Poofing</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{5c5bfc81-dea9-4205-8683-8dd4bde98e5a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{940741b8-502d-4a8e-9241-c29ee70d0aed}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d30c45f4-7798-44ef-a1d0-33a5bfcad981}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{5c5bfc81-dea9-4205-8683-8dd4bde98e5a}">
+		<relationship name="effects">
+			<destination>{197da164-94d9-46db-a6ba-1deeb7835399}</destination>
+			<destination>{08cd99b6-3a31-4e60-b1d3-2016b836f77c}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{940741b8-502d-4a8e-9241-c29ee70d0aed}" />
+	<object class="MixerBusFader" id="{197da164-94d9-46db-a6ba-1deeb7835399}" />
+	<object class="MixerSend" id="{08cd99b6-3a31-4e60-b1d3-2016b836f77c}">
+		<property name="level">
+			<value>-3</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{f0038a29-3938-4efa-8832-2a97555ff263}</destination>
+		</relationship>
+	</object>
+</objects>

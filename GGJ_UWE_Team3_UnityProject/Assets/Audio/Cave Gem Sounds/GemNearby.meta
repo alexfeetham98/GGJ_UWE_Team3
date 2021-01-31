@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 45f155eccb7215b4ab22618382bc1d48
+=======
+guid: b8fa52378b060b44a9f1a761dafe74dc
+>>>>>>> audio-mike
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
