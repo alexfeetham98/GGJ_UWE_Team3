@@ -343,7 +343,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299ff9706199bbc40a4c146624af2a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gemWheel: {fileID: 0}
+  slots: []
   selectedGemIndex: 0
+  currentUIGemIndex: 0
+  lerpScaler: 0
+  lerpScalerSpeed: 0
+  needToLoadUI: 0
+  hasLoadedUI: 0
 --- !u!1 &7288438977958892634
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,8 +40,10 @@ public class Gem : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Inventory inv = collision.gameObject.GetComponent<Inventory>();
+            GemSwitcher gemSwitcher = collision.gameObject.GetComponent<GemSwitcher>();
 
             inv.pickupGem(gemType);
+            gemSwitcher.AddGemToUI();
 
             Destroy(gameObject);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Poof", GetComponent<Transform>().position);

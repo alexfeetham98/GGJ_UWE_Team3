@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 9000546000959268805}
   - component: {fileID: 9000546000959268806}
   - component: {fileID: 9000546000959268800}
-  m_Layer: 0
-  m_Name: Dummy Frost Gem Reactor
+  m_Layer: 15
+  m_Name: Example  Frost Gem Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,9 +69,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -59555333
+  m_SortingLayer: 4
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18bfa57b83057fc4abe3577b5b9f3e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activatingGem: 2
+  isActive: 0
+  hasReacted: 0
   activatedMat: {fileID: 2100000, guid: 58ccc9d2c8b9f524d85e18b5da93e9e1, type: 2}
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  activatingGem: 2
