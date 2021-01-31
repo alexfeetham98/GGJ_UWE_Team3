@@ -176,7 +176,7 @@ MonoBehaviour:
   Path: ../Cave Gem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637477052992717669
+  lastModified: 637477062145767780
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -265,7 +265,7 @@ MonoBehaviour:
   - {fileID: -1834378586021386312}
   StringsBanks:
   - {fileID: 2263658856520051696}
-  stringsBankWriteTime: 637477052991907521
+  stringsBankWriteTime: 637477062145004761
   cacheVersion: 6
 --- !u!114 &2263658856520051696
 MonoBehaviour:
@@ -282,7 +282,7 @@ MonoBehaviour:
   Path: ../Cave Gem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637477052991907521
+  lastModified: 637477062145004761
   LoadResult: 0
   FileSizes:
   - Name: Desktop

@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7291459160578552044}
-  - component: {fileID: 7288347924961006806}
+  - component: {fileID: 8682080807433261972}
   - component: {fileID: 7288347924961006807}
   - component: {fileID: 7288347924961006804}
   - component: {fileID: 7288347924961006805}
@@ -209,8 +209,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7288347924961006806
-BoxCollider2D:
+--- !u!58 &8682080807433261972
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -222,19 +222,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: -0.65}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.43
 --- !u!50 &7288347924961006807
 Rigidbody2D:
   serializedVersion: 4
@@ -352,6 +342,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  natureGemSprite: {fileID: 0}
+  frostGemSprite: {fileID: 0}
+  flameGemSprite: {fileID: 0}
+  shadowGemSprite: {fileID: 0}
+  solidMat: {fileID: 0}
   selectedGemIndex: 0
   currentUIGemIndex: 0
   lerpScalerSpeed: 4
