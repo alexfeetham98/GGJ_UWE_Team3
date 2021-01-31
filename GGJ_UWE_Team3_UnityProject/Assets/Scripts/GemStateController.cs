@@ -15,6 +15,8 @@ public class GemStateController : MonoBehaviour
 {
     public GameObject blueWalls;
     public GameObject greenWalls;
+    public GameObject redWalls;
+    public GameObject purpleWalls;
 
     public GEMS gemState;
 
@@ -44,6 +46,7 @@ public class GemStateController : MonoBehaviour
         {
             blueWalls.SetActive(true);
         }
+
         if (gemState == GEMS.NATURE)
         {
             greenWalls.SetActive(false);
@@ -51,6 +54,24 @@ public class GemStateController : MonoBehaviour
         else if (gemState != GEMS.NATURE)
         {
             greenWalls.SetActive(true);
+        }
+
+        if (gemState == GEMS.FLAME)
+        {
+            redWalls.SetActive(false);
+        }
+        else if (gemState != GEMS.FLAME)
+        {
+            redWalls.SetActive(true);
+        }
+
+        if (gemState == GEMS.SHADOW)
+        {
+            purpleWalls.SetActive(false);
+        }
+        else if (gemState != GEMS.SHADOW)
+        {
+            purpleWalls.SetActive(true);
         }
     }
 }
