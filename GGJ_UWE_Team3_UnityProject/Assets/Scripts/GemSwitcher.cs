@@ -57,7 +57,15 @@ public class GemSwitcher : MonoBehaviour
     {
         selectedGemIndex = inv.gemInv.Count - 1;
         GemStateController._i.gemState = inv.gemInv[inv.gemInv.Count - 1];
-        gemWheel.Rotate(Vector3.forward, 90); //* (inv.gemInv.Count - (selectedGemIndex + 1)));
+        if (inv.gemInv[inv.gemInv.Count - 1] == GEMS.SHADOW)
+        {
+            gemWheel.Rotate(Vector3.forward, 180);
+        }
+        else
+        {
+            gemWheel.Rotate(Vector3.forward, 90);
+        }
+        //* (inv.gemInv.Count - (selectedGemIndex + 1)));
 
         slots[selectedGemIndex].Find("Gem Icon").GetComponent<Image>().sprite =
             GetGemImage(inv.gemInv[inv.gemInv.Count - 1]);
