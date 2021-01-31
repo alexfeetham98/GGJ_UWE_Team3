@@ -41,18 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1908004779
-    locked: 0
   - name: Map
     uniqueID: 2121116733
-    locked: 0
-  - name: Walls
-    uniqueID: 2966988549
     locked: 0
   - name: Props
     uniqueID: 4235411963
     locked: 0
   - name: Player
     uniqueID: 3635387927
+    locked: 0
+  - name: Top Walls
+    uniqueID: 4291302229
+    locked: 0
+  - name: UI
+    uniqueID: 325533509
     locked: 0

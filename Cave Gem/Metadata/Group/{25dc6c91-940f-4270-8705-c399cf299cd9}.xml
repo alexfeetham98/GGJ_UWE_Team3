@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{25dc6c91-940f-4270-8705-c399cf299cd9}">
+		<property name="name">
+			<value>Running Lava</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{6cce4fd5-f8e9-4515-9ba0-0f94e2d85f57}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{6fc0acb6-202d-45a1-83b6-01b9b3c7b791}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d30c45f4-7798-44ef-a1d0-33a5bfcad981}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{6cce4fd5-f8e9-4515-9ba0-0f94e2d85f57}">
+		<relationship name="effects">
+			<destination>{7b97d486-ee94-46ea-9f7a-99177db62ab4}</destination>
+			<destination>{6b817be2-0924-4c63-baca-598df6b4d0b3}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{6fc0acb6-202d-45a1-83b6-01b9b3c7b791}" />
+	<object class="MixerBusFader" id="{7b97d486-ee94-46ea-9f7a-99177db62ab4}" />
+	<object class="MixerSend" id="{6b817be2-0924-4c63-baca-598df6b4d0b3}">
+		<property name="level">
+			<value>-7.5</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{f0038a29-3938-4efa-8832-2a97555ff263}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2166767183926856992}
   - component: {fileID: 2166767183926856990}
   m_Layer: 0
-  m_Name: Dummy Nature Gem Reactor
+  m_Name: Example  Nature Gem Reactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,9 +69,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -59555333
+  m_SortingLayer: 4
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,5 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activatingGem: 1
   isActive: 0
+  hasReacted: 0
   activatedMat: {fileID: 2100000, guid: 7db394e84dae7174fa8cfc30ebf66797, type: 2}
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}

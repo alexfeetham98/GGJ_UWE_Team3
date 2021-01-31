@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private List<GEMS> gemInv = new List<GEMS>();
+    [SerializeField] public List<GEMS> gemInv = new List<GEMS>();
 
     //List<ITEMS> itemInv = new List<ITEMS>();
     //List<WEAPONS> weaponInv = new List<WEAPONS>();

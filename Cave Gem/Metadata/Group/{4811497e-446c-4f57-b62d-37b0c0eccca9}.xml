@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{4811497e-446c-4f57-b62d-37b0c0eccca9}">
+		<property name="name">
+			<value>Plopping</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{255de3c6-996a-492e-b2e1-91dda603afdf}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8d13a9b1-91d6-466c-bc26-7cf3ede5c885}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d30c45f4-7798-44ef-a1d0-33a5bfcad981}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{255de3c6-996a-492e-b2e1-91dda603afdf}">
+		<relationship name="effects">
+			<destination>{a005eddd-6aa3-4727-a421-fe860cf0c813}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8d13a9b1-91d6-466c-bc26-7cf3ede5c885}" />
+	<object class="MixerBusFader" id="{a005eddd-6aa3-4727-a421-fe860cf0c813}" />
+</objects>

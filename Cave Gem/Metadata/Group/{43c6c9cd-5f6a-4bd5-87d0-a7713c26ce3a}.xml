@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{43c6c9cd-5f6a-4bd5-87d0-a7713c26ce3a}">
+		<property name="volume">
+			<value>3</value>
+		</property>
+		<property name="name">
+			<value>RockShadow</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{8abc1ce3-e51f-4a9b-9415-d9baec3b99fc}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{18f2eadb-8c0f-4435-8ca2-752b3321ce4f}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{d30c45f4-7798-44ef-a1d0-33a5bfcad981}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{8abc1ce3-e51f-4a9b-9415-d9baec3b99fc}">
+		<relationship name="effects">
+			<destination>{8cbbaec0-5609-4952-a268-8cd42756f983}</destination>
+			<destination>{fa2c3af2-f5a1-4d5d-996e-54defd44dcd1}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{18f2eadb-8c0f-4435-8ca2-752b3321ce4f}" />
+	<object class="MixerBusFader" id="{8cbbaec0-5609-4952-a268-8cd42756f983}" />
+	<object class="MixerSend" id="{fa2c3af2-f5a1-4d5d-996e-54defd44dcd1}">
+		<property name="level">
+			<value>-6.5</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{f0038a29-3938-4efa-8832-2a97555ff263}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -5,9 +5,9 @@ using UnityEngine;
 public class BaseReaction : MonoBehaviour
 {
     [SerializeField] private GEMS activatingGem;
-    [Header("Debug (see, but don't touch)")]
-    [SerializeField] private bool isActive;
-    [SerializeField] private bool hasReacted;
+    
+    private bool isActive;
+    private bool hasReacted;
 
     void Start()
     {
