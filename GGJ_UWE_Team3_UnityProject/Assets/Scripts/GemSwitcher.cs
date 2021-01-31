@@ -8,6 +8,11 @@ public class GemSwitcher : MonoBehaviour
 {
     [SerializeField] private RectTransform gemWheel;
     [SerializeField] private RectTransform[] slots;
+    [SerializeField] private Sprite natureGemSprite;
+    [SerializeField] private Sprite frostGemSprite;
+    [SerializeField] private Sprite flameGemSprite;
+    [SerializeField] private Sprite shadowGemSprite;
+    [SerializeField] private Material solidMat;
 
     private Inventory inv;
     private bool canSwitch;
@@ -43,36 +48,63 @@ public class GemSwitcher : MonoBehaviour
     private void UpdateLerpScaler()
     {
         if (lerpScaler < 1)
-        {
             lerpScaler += 1 * lerpScalerSpeed * Time.deltaTime;
-        }
         if (lerpScaler >= 1)
-        {
             lerpScaler = 1;
-        }
     }
 
     public void AddGemToUI()
     {
         selectedGemIndex = inv.gemInv.Count - 1;
         GemStateController._i.gemState = inv.gemInv[inv.gemInv.Count - 1];
+        if (inv.gemInv[inv.gemInv.Count - 1] == GEMS.SHADOW)
+        {
+            gemWheel.Rotate(Vector3.forward, 180);
+        }
+        else
+        {
+            gemWheel.Rotate(Vector3.forward, 90);
+        }
+        //* (inv.gemInv.Count - (selectedGemIndex + 1)));
+
+        slots[selectedGemIndex].Find("Gem Icon").GetComponent<Image>().sprite =
+            GetGemImage(inv.gemInv[inv.gemInv.Count - 1]);
+        slots[selectedGemIndex].Find("Gem Icon").GetComponent<Image>().material = solidMat;
+
         hasLoadedUI = false;
+    }
+
+    private Sprite GetGemImage(GEMS gem)
+    {
+        switch (gem)
+        {
+            case GEMS.NATURE:
+                return natureGemSprite;
+            case GEMS.FROST:
+                return frostGemSprite;
+            case GEMS.FLAME:
+                return flameGemSprite;
+            case GEMS.SHADOW:
+                return shadowGemSprite;
+            default:
+                return null;
+        }
     }
 
     private void UpdateGemVisuals()
     {
-        //if (inv.gemInv.Count == 0)
-        //{
-        //    //selectedGemIndex = -1;
+        if (inv.gemInv.Count == 0)
+        {
+            //selectedGemIndex = -1;
 
-        //    // Show empty UI wheel
-        //}
-        //else if (inv.gemInv.Count > 0)
-        //{
-        //    // Populate wheel with collected gems
-        //}
+            // Show empty UI wheel
+        }
+        else if (inv.gemInv.Count > 0)
+        {
+            // Populate wheel with collected gems
+        }
 
-        // Updating selection based on gem count of 1
+        // Updating zoom selection based on gem count
         if (currentUIGemIndex != selectedGemIndex && !hasLoadedUI)
         {
             needToLoadUI = true;
@@ -115,14 +147,18 @@ public class GemSwitcher : MonoBehaviour
             if (selectedGemIndex + 1 != inv.gemInv.Count)
             {
                 selectedGemIndex += 1;
+                GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
+
+                gemWheel.Rotate(Vector3.forward, 90);
+                hasLoadedUI = false;
             }
-            else
-            {
-                selectedGemIndex = 0;
-            }
+            //else
+            //{
+            //    selectedGemIndex = 0;
+            //}
 
             // Update gemstate
-            GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
+            
         }
         else if (value.Get<float>() < 0 && canSwitch)
         {
@@ -130,14 +166,18 @@ public class GemSwitcher : MonoBehaviour
             if (selectedGemIndex != 0)
             {
                 selectedGemIndex -= 1;
+                GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
+
+                gemWheel.Rotate(Vector3.forward, -90);
+                hasLoadedUI = false;
             }
-            else
-            {
-                selectedGemIndex = inv.gemInv.Count - 1;
-            }
+            //else
+            //{
+            //    selectedGemIndex = inv.gemInv.Count - 1;
+            //}
 
             // Update gemstate
-            GemStateController._i.gemState = inv.gemInv[selectedGemIndex];
+            
         }
     }
 

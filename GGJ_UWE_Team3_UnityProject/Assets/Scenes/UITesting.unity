@@ -156,33 +156,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: slot1
-      value: 
-      objectReference: {fileID: 2016457362}
-    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: slot2
-      value: 
-      objectReference: {fileID: 226105809}
-    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: slot3
-      value: 
-      objectReference: {fileID: 978222637}
-    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: slot4
-      value: 
-      objectReference: {fileID: 446024613}
-    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
       propertyPath: gemWheel
       value: 
       objectReference: {fileID: 384424587}
     - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: lerpScalerSpeed
-      value: 4
-      objectReference: {fileID: 0}
+      propertyPath: solidMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 63ea4ea8f1cd7994eba9bf8ff48a8667, type: 2}
     - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: slots.Array.size
-      value: 4
-      objectReference: {fileID: 0}
+      propertyPath: flameGemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 90b359aba90cb0e45a9ec158aed6610e, type: 3}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: frostGemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 497b2d1c9a4fde84cb63eeb689c0ba89, type: 3}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: natureGemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ff83334e9f734b44f94bb9fa1f1e3556, type: 3}
+    - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
+      propertyPath: shadowGemSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bcb817b0242f58b4ca2c329a58942650, type: 3}
     - target: {fileID: 3842458404090693110, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
@@ -246,10 +242,6 @@ PrefabInstance:
     - target: {fileID: 7291459160578552044, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7801505083679077735, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7801505083960565725, guid: f8b360c0e4b971646973dd3cb0fc2a0b, type: 3}
       propertyPath: m_Enabled
