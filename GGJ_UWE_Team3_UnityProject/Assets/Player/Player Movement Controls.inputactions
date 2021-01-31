@@ -1,5 +1,5 @@
 {
-    "name": "New Controls",
+    "name": "Player Movement Controls",
     "maps": [
         {
             "name": "Player",
@@ -10,6 +10,22 @@
                     "type": "Value",
                     "id": "89afbe8f-a0ea-4395-a243-55b70d8ab0c6",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Gem Instant Switch",
+                    "type": "Value",
+                    "id": "bc225ec1-d2da-40b1-88e4-cb2b86d6088c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Gem Long Switch",
+                    "type": "Button",
+                    "id": "5b136a4c-61f5-4e77-b570-d6d7cc1d310c",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -67,6 +83,72 @@
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "145a0308-43bf-4702-8bdf-e1a7ed2c6489",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Instant Switch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "9c040ec3-62ef-4558-bc42-ce06e17e5647",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Instant Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d80b18b9-e914-44ba-8e32-eab2fd796d2c",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Instant Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "656c06b8-88a0-460e-9a14-d807a79cac63",
+                    "path": "1DAxis",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Long Switch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "fda5be72-b32c-41c4-ada8-004779c93d58",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Long Switch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c0145a33-4e78-479a-a950-8b5506619168",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Gem Long Switch",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

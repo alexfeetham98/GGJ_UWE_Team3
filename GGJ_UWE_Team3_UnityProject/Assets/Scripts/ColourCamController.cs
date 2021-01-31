@@ -5,12 +5,11 @@ using UnityEngine.Tilemaps;
 public class ColourCamController : MonoBehaviour
 {
     private Camera colourCam;
-    [SerializeField] private LayerMask allRealms;
 
     private void Awake()
     {
         colourCam = GetComponent<Camera>();
-        colourCam.cullingMask = LayerMask.GetMask("Nothing");
+        colourCam.cullingMask = LayerMask.GetMask("All Realms");
     }
 
     void Update()
