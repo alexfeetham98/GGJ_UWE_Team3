@@ -21,7 +21,7 @@ public class GemStateController : MonoBehaviour
     public GameObject LavaSound;
     public GameObject RockSlide;
     public GameObject Freeze;
-   
+    public ParticleSystem fire;
 
     public GEMS gemState;
 
@@ -68,12 +68,14 @@ public class GemStateController : MonoBehaviour
         if (gemState == GEMS.FLAME)
         {
             redWalls.SetActive(false);
-            LavaSound.SetActive(true);            
+            LavaSound.SetActive(true);
+            fire.Play();
         }
         else if (gemState != GEMS.FLAME)
         {
             redWalls.SetActive(true);
             LavaSound.SetActive(false);
+            fire.Stop();
         }
 
         if (gemState == GEMS.SHADOW)
