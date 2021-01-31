@@ -20,6 +20,8 @@ public class GemSwitcher : MonoBehaviour
     private bool updatingLerpScaler;
     private float lerpScaler;
     [SerializeField] private float lerpScalerSpeed;
+    private bool needToLoadUIForSingle;
+    private bool hasLoadedUIForSingle;
 
     private void Awake()
     {
@@ -30,10 +32,13 @@ public class GemSwitcher : MonoBehaviour
         nonSelectedSlotScale = new Vector3(0.21f, 0.21f, 0.21f);
         updatingLerpScaler = false;
         lerpScaler = 0;
+        needToLoadUIForSingle = false;
+        hasLoadedUIForSingle = false;
     }
 
     private void Update()
     {
+        UpdateLerpScaler();
         UpdateGemVisuals();
 
         CheckIfCanSwitch();
@@ -43,24 +48,17 @@ public class GemSwitcher : MonoBehaviour
     {
         if (updatingLerpScaler && lerpScaler < 1)
         {
-            lerpScaler += 0 * lerpScalerSpeed * Time.deltaTime;
+            lerpScaler += 1 * lerpScalerSpeed * Time.deltaTime;
         }
         else if (lerpScaler >= 1)
         {
             lerpScaler = 1;
             updatingLerpScaler = false;
         }
-
-        if (!updatingLerpScaler)
-        {
-            lerpScaler = 0;
-        }
     }
 
     private void UpdateGemVisuals()
     {
-
-
         if (inv.gemInv.Count == 0)
         {
             selectedGemIndex = -1;
@@ -72,14 +70,26 @@ public class GemSwitcher : MonoBehaviour
             // Populate wheel with collected gems
         }
 
-        // Updating selection based on gem count
-        if (inv.gemInv.Count == 1)
+        // Updating selection based on gem count of 1
+        if (inv.gemInv.Count == 1 && !hasLoadedUIForSingle)
         {
+            updatingLerpScaler = true;
+            needToLoadUIForSingle = true;
             selectedGemIndex = 0;
-            slot1.localScale = Vector3.Slerp(nonSelectedSlotScale, selectedSlotScale, lerpScaler);
-            slot2.localScale = nonSelectedSlotScale;
-            slot3.localScale = nonSelectedSlotScale;
-            slot4.localScale = nonSelectedSlotScale;
+
+            if (needToLoadUIForSingle)
+            {
+                slot1.localScale = Vector3.Lerp(nonSelectedSlotScale, selectedSlotScale, lerpScaler);
+                //slot2.localScale = Vector3.Slerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
+                //slot3.localScale = Vector3.Lerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
+                //slot4.localScale = Vector3.Slerp(selectedSlotScale, nonSelectedSlotScale, lerpScaler);
+            }
+            if (lerpScaler == 1)
+            {
+                needToLoadUIForSingle = false;
+                hasLoadedUIForSingle = true;
+                lerpScaler = 0;
+            }
         }
     }
 
