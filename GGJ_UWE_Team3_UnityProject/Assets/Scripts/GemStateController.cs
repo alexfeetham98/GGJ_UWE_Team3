@@ -17,6 +17,11 @@ public class GemStateController : MonoBehaviour
     public GameObject greenWalls;
     public GameObject redWalls;
     public GameObject purpleWalls;
+    public GameObject WaterSound;
+    public GameObject LavaSound;
+    public GameObject RockSlide;
+    public GameObject Freeze;
+   
 
     public GEMS gemState;
 
@@ -41,37 +46,45 @@ public class GemStateController : MonoBehaviour
         if (gemState == GEMS.FROST)
         {
             blueWalls.SetActive(false);
+            Freeze.SetActive(true);
         }
         else if (gemState != GEMS.FROST)
         {
             blueWalls.SetActive(true);
+            Freeze.SetActive(false);           
         }
 
         if (gemState == GEMS.NATURE)
         {
             greenWalls.SetActive(false);
+            WaterSound.SetActive(true);
         }
         else if (gemState != GEMS.NATURE)
         {
             greenWalls.SetActive(true);
+            WaterSound.SetActive(false);           
         }
 
         if (gemState == GEMS.FLAME)
         {
             redWalls.SetActive(false);
+            LavaSound.SetActive(true);            
         }
         else if (gemState != GEMS.FLAME)
         {
             redWalls.SetActive(true);
+            LavaSound.SetActive(false);
         }
 
         if (gemState == GEMS.SHADOW)
         {
             purpleWalls.SetActive(false);
+            RockSlide.SetActive(true);
         }
         else if (gemState != GEMS.SHADOW)
         {
             purpleWalls.SetActive(true);
+            RockSlide.SetActive(false);     
         }
     }
 }
