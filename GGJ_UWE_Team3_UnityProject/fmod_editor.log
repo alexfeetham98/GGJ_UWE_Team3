@@ -2,14 +2,12 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20107 (113487), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=8, nSamplesPerSec=48000, nAvgBytesPerSec=1536000, nBlockAlign=32, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x0000063F, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] DownMix::init                            : dspbuffersize: 1024  rate: 48000. output speaker mode: 7, input speaker mode 3
-[LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002AA8C789E38 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000022B05CFD6A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,227 +15,8 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AA8CBFE738
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AA8CBFE738
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C37187EFB8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEF1AE7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEF1AE7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEF1AE7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEF1AE7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002AA85C4DEF8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Poof Smoke3', format=5, channels=2, frequency=48000, lengthbytes=39040, lengthpcm=190790, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.194680.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C37187EFB8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEF1AE7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEF1AE7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEF1AE7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEF1AE7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002AA85C4DEF8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Poof Smoke1', format=5, channels=2, frequency=48000, lengthbytes=30848, lengthpcm=144893, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.244245.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C37187EFB8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEF1AE7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEF1AE7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEF1AE7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEF1AE7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002AA85C4DEF8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Poof Smoke4', format=5, channels=2, frequency=48000, lengthbytes=29888, lengthpcm=190790, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.201467.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C37187EFB8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFEF1AE7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFEF1AE7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFEF1AE7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFEF1AE7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002AA85C4DEF8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Poof Smoke2', format=5, channels=2, frequency=48000, lengthbytes=52800, lengthpcm=257038, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.196453.
-[LOG] SoundI::release                          : DiamondNearbySound (000002A9FA0B5F18)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA857598F8)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8CBFE738)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AA8CBFE078
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AA8CBFE078
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : DiamondNearbySound (000002A9FA0B6278)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA85758D98)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8CBFE078)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AA8CBFE3D8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AA8CBFE3D8
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AA8CBFE3D8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AA8CBFE3D8
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : DiamondNearbySound (000002AA852F7F48)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8CB7A408)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8CBFE3D8)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\Cave Gem\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002A9FA46A878 : node = 000002AA8E71D8E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002AA8CAF4978.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A9FA46A878
-[LOG] SystemI::createSoundInternal             :     Create name='..\Cave Gem\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002AA8E71D9F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cave_Gem_SynthMusic2', format=5, channels=2, frequency=48000, lengthbytes=735008, lengthpcm=2910316, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219604.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A9FA46A878
-[LOG] SoundI::release                          : Cave_Gem_SynthMusic2 (000002A9FA0B6428)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA85758578)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA8CBFDD18)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\Cave Gem\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002A9FA46AA28 : node = 000002AA8E71A6E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002AA8CAF4978.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A9FA46AA28
-[LOG] SystemI::createSoundInternal             :     Create name='..\Cave Gem\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002AA8E71A7F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 5500
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CaveAmbience2', format=5, channels=2, frequency=48000, lengthbytes=1681152, lengthpcm=10118436, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.077074.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A9FA46AA28
-[LOG] SoundI::release                          : CaveAmbience2 (000002A9FA0B65D8)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8CB7B448)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8CBFDB68)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = ..\Cave Gem\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002A9FA46AD88 : node = 000002AA8E71D3E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000002AA8CAF4978.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A9FA46AD88
-[LOG] SystemI::createSoundInternal             :     Create name='..\Cave Gem\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002AA8E71D4F0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 10500
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CaveAmbience2', format=5, channels=2, frequency=48000, lengthbytes=1681152, lengthpcm=10118436, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.077074.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A9FA46AD88
-[LOG] SoundI::release                          : CaveAmbience2 (000002A9FA46AA28)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8575BFF8)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8CBFE738)
-[LOG] SystemI::createSound                     : filename = ..\Cave Gem\Build\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002A9FA46B448 : node = 000002AA8E71AD20
-[LOG] SystemI::createSound                     : add node to async list : head = 000002AA8CAF4978.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A9FA46B448
-[LOG] SystemI::createSoundInternal             :     Create name='..\Cave Gem\Build\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 7109856
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 33632
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002AA8E71AE30
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cave_Gem_SynthMusic2', format=5, channels=2, frequency=48000, lengthbytes=735008, lengthpcm=2910316, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.219604.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A9FA46B448
-[LOG] SoundI::release                          : Cave_Gem_SynthMusic2 (000002A9FA46A878)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA8575AC78)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA8CBFE3D8)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002AA8CBFDEC8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002AA8CBFDEC8
-[LOG] SoundI::release                          : DiamondNearbySound (000002A9FA0B60C8)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8575B498)
-[LOG] SoundI::release                          :     DiamondNearbySound (000002AA8CBFDEC8)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : CaveAmbience2 (000002A9FA46AD88)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8575B7D8)
-[LOG] SoundI::release                          :     CaveAmbience2 (000002AA8CBFE078)
-[LOG] SoundI::release                          : Cave_Gem_SynthMusic2 (000002A9FA46B448)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA8575BE58)
-[LOG] SoundI::release                          :     Cave_Gem_SynthMusic2 (000002AA8CBFE228)
-[LOG] SoundI::release                          :  (000002AA85B6DD48)
-[LOG] SoundI::release                          :     Poof Smoke4 (000002AA8575D1D8)
-[LOG] SoundI::release                          :  (000002AA8C2BBD08)
-[LOG] SoundI::release                          :     Poof Smoke3 (000002AA85758F38)
-[LOG] SoundI::release                          :  (000002AA85B6D788)
-[LOG] SoundI::release                          :     Poof Smoke2 (000002AA8575AFB8)
-[LOG] SoundI::release                          :  (000002AA8C2BB748)
-[LOG] SoundI::release                          :     Poof Smoke1 (000002AA8575D378)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
@@ -249,5 +28,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
