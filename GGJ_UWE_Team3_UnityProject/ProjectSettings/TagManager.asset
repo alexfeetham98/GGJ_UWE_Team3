@@ -12,18 +12,18 @@ TagManager:
   - Water
   - UI
   - 
+  - PostProcessing
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - All Realms
+  - Nature Realm
+  - Frost Realm
+  - Flame Realm
+  - Shadow Realm
+  - Common Realm
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Map
     uniqueID: 2121116733
+    locked: 0
+  - name: Walls
+    uniqueID: 2966988549
     locked: 0
   - name: Props
     uniqueID: 4235411963
